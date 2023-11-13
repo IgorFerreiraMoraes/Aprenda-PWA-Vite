@@ -1,40 +1,55 @@
-# Vite-PWA-Tutorial
+# Aprenda PWA com Vite
 
-> Crie PWAs com [Vite](https://vitejs.dev/): Um Guia Simples Passo a Passo
+> Crie PWAs com [Vite](https://vitejs.dev/): Um Guia Simples Passo a Passo para Iniciantes
+
+## Introdução
 
 Progressive Web Apps (PWAs) são páginas que podem ser instaladas diretamente do navegador, proporcionando experiências nativas sem a complexidade de lojas de aplicativos. Este repositório visa ensinar a criação delas.
 
-## Resultado do Guia
+### Resultado do Guia
 
-Ao seguir o guia fornecido neste README, você poderá transformar qualquer projeto gerado com Vite em uma PWA totalmente funcional. No repositório, há um exemplo prático usando o aplicativo padrão de contador.
+    Ao seguir o guia fornecido neste README, você poderá transformar qualquer projeto gerado com Vite em uma PWA totalmente funcional. No repositório, há um exemplo prático usando o aplicativo padrão de contador.
 
--   ### Acesse e Teste
+## Acesse e Teste
 
-    Esta aplicação está hospedada no GitHub Pages. [Acesse Aqui.](https://github.com/IgorFerreiraMoraes/Vite-PWA-Tutorial)
+Esta aplicação está hospedada no GitHub Pages. [Acesse Aqui](https://github.com/IgorFerreiraMoraes/Vite-PWA-Tutorial).
 
--   ### Instale Localmente
-    -   Clonando o Repositório
-        ```
-        git clone https://github.com/IgorFerreiraMoraes/Vite-PWA-Tutorial
-        cd Vite-PWA-Tutorial
-        ```
-    -   Instalando Dependências
-        ```
-        npm install
-        ```
-    -   Visualizando o Resultado
-        ```
-        npm run build
-        npm run preview
-        ```
-        O Service Worker (SW) é criado ao construir a aplicação, por isso **não funciona** apenas com `npm run dev`.
+É possível abrir no navegador, instalar no seu computador ou celular, realizar o teste do Lighthouse e ver que está tudo de acordo e pronto para ser uma PWA.
+
+## Instale Localmente
+
+-   Clonando o Repositório
+
+```
+git clone https://github.com/IgorFerreiraMoraes/Vite-PWA-Tutorial
+cd Vite-PWA-Tutorial
+```
+
+-   Instalando Dependências
+
+```
+npm install
+```
+
+-   Visualizando o Resultado
+
+```
+npm run build
+npm run preview
+```
+
+O Service Worker (SW) é criado ao construir a aplicação, por isso **não funciona** apenas com `npm run dev`.
 
 ## Criação do Projeto com Vite
 
-1. Para começar, rode o seguinte comando: `npm create vite@latest`.
-2. Depois, siga as instruções para:
+1. Para começar, execute o comando:
+    ```
+    npm create vite@latest
+    ```
+    Ele inicia um novo projeto Vite na versão mais recente.
+2. Em seguida, siga as instruções para:
     - Dar um nome ao projeto
-    - Escolher um framework/biblioteca entre Vanilla, Vue, React, Svelte e outros
+    - Definir um framework/biblioteca entre Vanilla, Vue, React, Svelte e outros
     - Escolher entre JavaScript e TypeScript
 3. Instale as dependências
     ```
@@ -44,8 +59,13 @@ Ao seguir o guia fornecido neste README, você poderá transformar qualquer proj
 
 ## Instalação do Plugin [VitePWA](https://vite-pwa-org.netlify.app/)
 
-1. Instale o plugin como dependência de desenvolvimento: `npm install -D vite-plugin-pwa`
-2. Se o projeto foi criado como vanilla, é necessário criar um arquivo `vite.config.js` / `vite.config.ts`, conforme a linguagem escolhida, na pasta raíz. Caso contrário, apenas acesse o arquivo existente.
+> Este plugin gera o Web Manifest, que define como a aplicação aparece nos dispositivos, e o Service Worker, que permite tarefas em segundo plano.
+
+1. Instale o plugin como dependência de desenvolvimento:
+    ```
+    npm install -D vite-plugin-pwa
+    ```
+2. Se o projeto foi gerado como vanilla, é necessário criar um arquivo `vite.config.js` / `vite.config.ts`, conforme a linguagem escolhida, na pasta raíz. Caso contrário, apenas acesse o arquivo existente.
 3. No arquivo de configuração do Vite, é preciso o seguinte:
 
     ```
@@ -59,9 +79,11 @@ Ao seguir o guia fornecido neste README, você poderá transformar qualquer proj
     });
     ```
 
-    Se algum framework estiver sendo usado, haverá um import para seu plugin correspondente, que estará na lista de plugins. Mantenha a configuração inicial e adicione o VitePWA.
+    Se algum framework estiver sendo usado, haverá um import do seu plugin correspondente, que estará na lista de plugins. Mantenha a configuração inicial e adicione o VitePWA.
 
 ## Adição de Requisitos Mínimos Para PWA
+
+Sem esses ítens essenciais, os navegadores não reconhecerão a aplicação como PWA e não será possível instalá-la. Também preciso frizar que existem outras características que podem ser adicionadas a uma aplicação / página. Para saber mais, [entre aqui](https://developer.mozilla.org/en-US/docs/Web/Manifest).
 
 -   ### Entry Point
 
@@ -105,7 +127,7 @@ Ao seguir o guia fornecido neste README, você poderá transformar qualquer proj
     -   Cor Tema (a mesma usada em `index.html`)
     -   Ícone com pelo menos 512x512px
 
-    O VitePWA gera o arquivo automaticamente no processo de `build`. Inclua os novos parâmetros em `vite.config.ts`:
+    O VitePWA gera o arquivo automaticamente no processo de `build`. Para isso, inclua os novos parâmetros em `vite.config.ts`:
 
     ```
     VitePWA({
@@ -131,3 +153,16 @@ Ao seguir o guia fornecido neste README, você poderá transformar qualquer proj
 
 -   ### Ícones e Imagens
     Uma aplicação PWA pode estar em diversos ambientes diferentes: Android, iOS, diferentes navegadores. Cada um desses tem tamanhos recomendados distintos para ícones e muitas vezes redimensionar as imagens não é o melhor caminho. Caso queira, existem [geradores de assets](https://vite-pwa-org.netlify.app/assets-generator/) para PWAs que criam ícones nos tamanhos certos.
+
+## Deploy da Sua PWA
+
+Com isso, sua _configuração mínima_ está pronta! Para testar, faça o seguinte:
+
+```
+npm run build
+npm run preview
+```
+
+Ao abrir o `localhost`, você pode verificar que há um novo símbolo na barra, ele serve para instalar a aplicação.
+
+Plataformas como Vercel e Netlify fazem o processo de build por conta própria. Já com o GitHub Pages, é necessário criar um novo branch com o diretório dist e defini-lo como origem nas configurações ou usar GitHub actions.
