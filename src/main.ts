@@ -16,7 +16,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <button id="counter" type="button"></button>
     </div>
     <p class="read-the-docs">
-        Para saber mais, clique nos logos do Vite ou TypeScript
+        Para saber mais, visite o <a href="https://github.com/IgorFerreiraMoraes/Aprenda-PWA-Vite">repositório</a>!
     </p>
   </div>
 `
