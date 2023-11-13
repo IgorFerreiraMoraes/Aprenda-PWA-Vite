@@ -2,11 +2,23 @@
 
 > Crie PWAs com [Vite](https://vitejs.dev/): Um Guia Simples Passo a Passo para Iniciantes
 
+-   [Introdução](#introdução)
+    -   [Resultado do Guia](#resultado-do-guia)
+-   [Acesse e Teste](acesse-e-teste)
+-   [Instale Localmente](#instale-localmente)
+-   [Criação do Projeto com Vite](#criação-do-projeto-com-vite)
+-   [Instalação do Plugin VitePWA](#instalação-do-plugin-vitepwa)
+-   [Adição de Requisitos Mínimos Para PWA](#adição-de-requisitos-mínimos-para-pwa)
+    -   [Entry Point](#entry-point)
+    -   [Manifesto](#manifesto)
+    -   [Ícones e Imagens](#ícones-e-imagens)
+-   [Deploy da Sua PWA](#deploy-da-sua-pwa)
+
 ## Introdução
 
 Progressive Web Apps (PWAs) são páginas que podem ser instaladas diretamente do navegador, proporcionando experiências nativas sem a complexidade de lojas de aplicativos. Este repositório visa ensinar a criação delas.
 
-### Resultado do Guia
+-   ### Resultado do Guia
 
     Ao seguir o guia fornecido neste README, você poderá transformar qualquer projeto gerado com Vite em uma PWA totalmente funcional. No repositório, há um exemplo prático usando o aplicativo padrão de contador.
 
