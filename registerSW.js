@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/Aprenda-PWA-Vite/sw.js', { scope: '/Aprenda-PWA-Vite/' })})}
