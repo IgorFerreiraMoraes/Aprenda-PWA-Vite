@@ -109,8 +109,8 @@ Ao seguir o guia fornecido neste README, você poderá transformar qualquer proj
 
     ```
     VitePWA({
-      registerType: 'autoUpdate',
-    	includeAssets: ['vite.svg'], // ícones e imagens
+        registerType: 'autoUpdate',
+        includeAssets: ['vite.svg'], // ícones e imagens
     	manifest: {
     		name: 'Nome da Aplicação',
     		short_name: 'Aplicação',
