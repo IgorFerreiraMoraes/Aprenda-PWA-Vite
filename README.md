@@ -1,10 +1,10 @@
 # Vite-PWA-Tutorial
-> Crie PWA com [Vite](https://vitejs.dev/): Um Guia Simples Passo a Passo.
+> Crie PWAs com [Vite](https://vitejs.dev/): Um Guia Simples Passo a Passo
 
 Progressive Web Apps (PWAs) são páginas que podem ser instaladas diretamente do navegador, proporcionando experiências nativas sem a complexidade de lojas de aplicativos. Este repositório visa ensinar a criação delas.
 
 ## Resultado do Guia
-Ao seguir o guia fornecido neste README, você poderá transformar qualquer projeto gerado com Vite em uma PWA totalmente funcional. No repositório há um exemplo prático usando o aplicativo padrão de contador.
+Ao seguir o guia fornecido neste README, você poderá transformar qualquer projeto gerado com Vite em uma PWA totalmente funcional. No repositório, há um exemplo prático usando o aplicativo padrão de contador.
 
 * ### Acesse e Teste
     Esta aplicação está hospedada no GitHub Pages. [Acesse Aqui.](https://github.com/IgorFerreiraMoraes/Vite-PWA-Tutorial)
@@ -37,3 +37,19 @@ Ao seguir o guia fornecido neste README, você poderá transformar qualquer proj
     cd nome-do-projeto
     npm install
     ```
+
+## Instalação do Plugin [VitePWA](https://vite-pwa-org.netlify.app/)
+1. Instale o plugin como dependência de desenvolvimento: `npm install -D vite-plugin-pwa`
+2. Se o projeto foi criado como vanilla, é necessário criar um arquivo `vite.config.js` / `vite.config.ts`, conforme a linguagem escolhida. Caso contrário, apenas acesse o arquivo existente.
+3. No arquivo de configuração do Vite, é preciso o seguinte:
+    ```
+    import { defineConfig } from 'vite';
+    import { VitePWA } from 'vite-plugin-pwa';
+    
+    export default defineConfig({
+        plugins: [
+            VitePWA({ registerType: 'autoUpdate' }),
+        ],
+    });
+    ```
+    Se algum framework estiver sendo usado, haverá um import para seu plugin correspondente, que estará na lista de plugins. Mantenha a configuração inicial e adicione o VitePWA.
