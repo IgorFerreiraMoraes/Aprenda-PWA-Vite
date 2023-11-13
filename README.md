@@ -1,5 +1,5 @@
 # Vite-PWA-Tutorial
-> Crie PWAs Simples com [Vite](https://vitejs.dev/): Um Guia Passo a Passo.
+> Crie PWA com [Vite](https://vitejs.dev/): Um Guia Simples Passo a Passo.
 
 Progressive Web Apps (PWAs) são páginas que podem ser instaladas diretamente do navegador, proporcionando experiências nativas sem a complexidade de lojas de aplicativos. Este repositório visa ensinar a criação delas.
 
@@ -25,3 +25,15 @@ Ao seguir o guia fornecido neste README, você poderá transformar qualquer proj
         npm run preview
         ```
         O Service Worker (SW) é criado ao construir a aplicação, por isso **não funciona** apenas com `npm run dev`.
+
+## Criação do Projeto com Vite
+1. Para começar, rode o seguinte comando: `npm create vite@latest`.
+2. Depois, siga as instruções para: 
+    * Dar um nome ao projeto
+    * Escolher um framework/biblioteca entre Vanilla, Vue, React, Svelte e outros
+    * Escolher entre JavaScript e TypeScript
+3. Instale as dependências
+    ```
+    cd nome-do-projeto
+    npm install
+    ```
