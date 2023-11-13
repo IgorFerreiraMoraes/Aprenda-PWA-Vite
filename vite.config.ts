@@ -2,6 +2,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+    base: '/Aprenda-PWA-Vite/',
 	plugins: [
 		VitePWA({
 			registerType: 'autoUpdate',
