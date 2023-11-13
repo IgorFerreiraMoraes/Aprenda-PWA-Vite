@@ -106,7 +106,7 @@ Ao seguir o guia fornecido neste README, você poderá transformar qualquer proj
     -   Ícone com pelo menos 512x512px
 
     O VitePWA gera o arquivo automaticamente no processo de `build`. Inclua os novos parâmetros em `vite.config.ts`:
-    
+
     ```
     VitePWA({
       registerType: 'autoUpdate',
@@ -130,4 +130,4 @@ Ao seguir o guia fornecido neste README, você poderá transformar qualquer proj
     ```
 
 -   ### Ícones e Imagens
-    Uma aplicação PWA pode estar em diversos ambientes diferentes: Android, iOS, diferentes navegadores. Cada um desses tem tamanhos recomendados distintos para ícones e muitas vezes redimensionar as imagens não é o melhor caminho. Caso queira, existem (geradores de assets)[https://vite-pwa-org.netlify.app/assets-generator/] para PWAs que criam ícones nos tamanhos certos.
+    Uma aplicação PWA pode estar em diversos ambientes diferentes: Android, iOS, diferentes navegadores. Cada um desses tem tamanhos recomendados distintos para ícones e muitas vezes redimensionar as imagens não é o melhor caminho. Caso queira, existem [geradores de assets](https://vite-pwa-org.netlify.app/assets-generator/) para PWAs que criam ícones nos tamanhos certos.
