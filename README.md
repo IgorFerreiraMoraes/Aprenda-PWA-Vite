@@ -112,10 +112,10 @@ Ao seguir o guia fornecido neste README, você poderá transformar qualquer proj
       registerType: 'autoUpdate',
     	includeAssets: ['vite.svg'], // ícones e imagens
     	manifest: {
-    		name: 'Contador Vite PWA',
-    		short_name: 'Contador PWA',
+    		name: 'Nome da Aplicação',
+    		short_name: 'Aplicação',
     		description:
-    		    'Um contador feito com Vite para demonstrar como criar uma PWA e instlá-la em dispositivos móveis',
+    		    'Descrição da aplicação',
     		theme_color: '#ffffff',
     		icons: [
     		    {
