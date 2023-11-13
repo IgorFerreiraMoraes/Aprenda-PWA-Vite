@@ -125,7 +125,7 @@ Ao seguir o guia fornecido neste README, você poderá transformar qualquer proj
     			    purpose: 'any maskable',
     		    },
     		],
-    	,
+        },
     }),
     ```
 
