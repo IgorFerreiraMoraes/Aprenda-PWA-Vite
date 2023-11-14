@@ -24,7 +24,7 @@ Progressive Web Apps (PWAs) são páginas que podem ser instaladas diretamente d
 
 ## Acesse e Teste
 
-Esta aplicação está hospedada no GitHub Pages. [Acesse Aqui](https://github.com/IgorFerreiraMoraes/Vite-PWA-Tutorial).
+Esta aplicação está hospedada no GitHub Pages. [Acesse Aqui](https://igorferreiramoraes.github.io/Aprenda-PWA-Vite/).
 
 É possível abrir no navegador, instalar no seu computador ou celular, realizar o teste do Lighthouse e ver que está tudo de acordo e pronto para ser uma PWA.
 
