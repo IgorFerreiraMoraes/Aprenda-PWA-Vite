@@ -1,18 +1,18 @@
-# Aprenda PWA com Vite
+# Aprenda PWA com Vite ⚡
 
-> Crie PWAs com [Vite](https://vitejs.dev/): Um Guia Simples Passo a Passo para Iniciantes
+> Crie PWAs com [Vite](https://vitejs.dev/): Um Guia Simples Passo a Passo para Iniciantes 📖
 
 -   [Introdução](#introdução)
     -   [Resultado do Guia](#resultado-do-guia)
--   [Acesse e Teste](acesse-e-teste)
--   [Instale Localmente](#instale-localmente)
--   [Criação do Projeto com Vite](#criação-do-projeto-com-vite)
--   [Instalação do Plugin VitePWA](#instalação-do-plugin-vitepwa)
+-   [Acesse e Teste 🌐](acesse-e-teste-)
+-   [Instale Localmente 🛠️](#instale-localmente-%EF%B8%8F)
+-   [Criação do Projeto com Vite 🚧](#criação-do-projeto-com-vite-)
+-   [Instalação do Plugin VitePWA ⚙️](#instalação-do-plugin-vitepwa-%EF%B8%8F)
 -   [Adição de Requisitos Mínimos Para PWA](#adição-de-requisitos-mínimos-para-pwa)
-    -   [Entry Point](#entry-point)
-    -   [Manifesto](#manifesto)
-    -   [Ícones e Imagens](#ícones-e-imagens)
--   [Deploy da Sua PWA](#deploy-da-sua-pwa)
+    -   [Entry Point 💻](#entry-point-)
+    -   [Manifesto 📋](#manifesto-)
+    -   [Ícones e Imagens 🌈](#ícones-e-imagens-)
+-   [Deploy da Sua PWA 🚀](#deploy-da-sua-pwa--)
 
 ## Introdução
 
@@ -22,13 +22,13 @@ Progressive Web Apps (PWAs) são páginas que podem ser instaladas diretamente d
 
     Ao seguir o guia fornecido neste README, você poderá transformar qualquer projeto gerado com Vite em uma PWA totalmente funcional. No repositório, há um exemplo prático usando o aplicativo padrão de contador.
 
-## Acesse e Teste
+## Acesse e Teste 🌐
 
 Esta aplicação está hospedada no GitHub Pages. [Acesse Aqui](https://igorferreiramoraes.github.io/Aprenda-PWA-Vite/).
 
 É possível abrir no navegador, instalar no seu computador ou celular, realizar o teste do Lighthouse e ver que está tudo de acordo e pronto para ser uma PWA.
 
-## Instale Localmente
+## Instale Localmente 🛠️
 
 -   Clonando o Repositório
 
@@ -52,7 +52,7 @@ npm run preview
 
 O Service Worker (SW) é criado ao construir a aplicação, por isso **não funciona** apenas com `npm run dev`.
 
-## Criação do Projeto com Vite
+## Criação do Projeto com Vite 🚧
 
 1. Para começar, execute o comando:
     ```
@@ -69,7 +69,7 @@ O Service Worker (SW) é criado ao construir a aplicação, por isso **não func
     npm install
     ```
 
-## Instalação do Plugin [VitePWA](https://vite-pwa-org.netlify.app/)
+## Instalação do Plugin [VitePWA](https://vite-pwa-org.netlify.app/) ⚙️
 
 > Este plugin gera o Web Manifest, que define como a aplicação aparece nos dispositivos, e o Service Worker, que permite tarefas em segundo plano.
 
@@ -97,7 +97,7 @@ O Service Worker (SW) é criado ao construir a aplicação, por isso **não func
 
 Sem esses ítens essenciais, os navegadores não reconhecerão a aplicação como PWA e não será possível instalá-la. Também preciso frizar que existem outras características que podem ser adicionadas a uma aplicação / página. Para saber mais, [entre aqui](https://developer.mozilla.org/en-US/docs/Web/Manifest).
 
--   ### Entry Point
+-   ### Entry Point 💻
 
     A seção `<head>` do arquivo `index.html` **deve** conter os seguintes elementos:
 
@@ -129,7 +129,7 @@ Sem esses ítens essenciais, os navegadores não reconhecerão a aplicação com
     </head>
     ```
 
--   ### Manifesto
+-   ### Manifesto 📋
 
     O manifesto é um arquivo JSON que fornece as informações que o navegor precisa para instalar uma PWA. São elas:
 
@@ -163,10 +163,10 @@ Sem esses ítens essenciais, os navegadores não reconhecerão a aplicação com
     }),
     ```
 
--   ### Ícones e Imagens
+-   ### Ícones e Imagens 🌈
     Uma aplicação PWA pode estar em diversos ambientes diferentes: Android, iOS, diferentes navegadores. Cada um desses tem tamanhos recomendados distintos para ícones e muitas vezes redimensionar as imagens não é o melhor caminho. Caso queira, existem [geradores de assets](https://vite-pwa-org.netlify.app/assets-generator/) para PWAs que criam ícones nos tamanhos certos.
 
-## Deploy da Sua PWA
+## Deploy da Sua PWA  🚀
 
 Com isso, sua _configuração mínima_ está pronta! Para testar, faça o seguinte:
 
